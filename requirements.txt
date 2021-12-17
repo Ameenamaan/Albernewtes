@@ -3,5 +3,11 @@ Motor
 Pyrogram
 Pymongo
 Requests 
-TgCrypto
+TgCrypto 
 IMDbPY
+asyncio
+aiofiles
+umongo
+dnspython
+heroku3
+pyromod
