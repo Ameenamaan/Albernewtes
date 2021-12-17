@@ -139,15 +139,11 @@ async def auto_filter(bot: Client, update: Message):
                                 InlineKeyboardButton("🔍Search Google", url=f"https://google.com/search?q={query}Imdb")
                             ],
                             [
-                                InlineKeyboardButton('🎭 Request', url='https://t.me/MCrequestAccepter_bot'),
-                                InlineKeyboardButton('📃 Owner', url='https://t.me/Myfreak123')
-                            ],
-                            [
-                                InlineKeyboardButton('🎭 Reason', url='https://t.me/Reasonswhybro/7'),
-                                InlineKeyboardButton('📃 Admin', url='https://t.me/Sanoob_Achu_18')       
+                                InlineKeyboardButton('🎭 Request', url='https://t.me/@Puthiya_Sinimakal_Request_bot'),
+                                InlineKeyboardButton('📃 Owner', url='https://t.me/Ameen_Ameen_12')
                             ],
                             [  
-                                InlineKeyboardButton('♻️Report A Problem♻️', url='https://t.me/Reasonswhybro/10')
+                                InlineKeyboardButton('♻️Our Channel♻️', url='https://t.me/HDmovieDp')
                             ]
                         ]
                     ),
