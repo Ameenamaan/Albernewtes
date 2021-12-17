@@ -1,43 +1,20 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) @AlbertEinsteinTG
-
 class Translation(object):
-    
-    START_TEXT = """<b><u>Hey {} How Are You😌!!</b></u>
-<i>Am Just A Advance Auto Filter Bot....😉
 
-You Can't Add me Your Group ❌️
+    HELP_TEXT = """<b><u>BASIC COMMANDS</u></b>\n\n • /start :- Check Iam Alive\n • /help :- More Details\n • /about :- About Me\n • /sub :- Support and deploy\n • /stats :- User Count""" 
+    START_TEXT = """👋Hey {},Iam <a href="t.me/csautofilter3bot">Naruto ADVbot</a>\n\nMake me an admin for your group and channel then connect me....🎉\n🙂To build a Naruto V2 like me, click on the /Subscribe command\nSubscribe to the update channel to learn about my updates and activity...\nClick on the Help /Help button for more information\n🧒 Maintained By <a href="https://t.me/Hiphop_Aadi">This Person</a> & <a href="https://t.me/{}">This Person</a>"""       
+    ABOUT_TEXT = """📃Bot : <a href="t.me/{}">Naruto</a>\n🧒Dev : <a href="t.me/Hiphop_Aadi">HiphopAadi</a>\n🧒Creator : <a href="t.me/{}">{}</a>\n📡Hosted On : <a href="https://t.me/cinimastudio">Heroku</a>\n🗣️Language : <a href="https://docs.pyrogram.org">Python3</a>\n📚Library : <a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a>\n🗒️Version : <a href="t.me/{}">2.9.0</a>\n📖Source Code : 🤐"""
+    FSUB_TEXT = """ഹേയ് {} തായേ കാണുന്ന ചാനലിൽ നിങ്ങൾ ഇല്ല അത് കൊണ്ട് നിങ്ങക് സിനിമ കിട്ടില്ല...\nസിനിമ കിട്ടാനായി താഴെ കാണുന്ന 🔔 Join എന്ന ബട്ടനിൽ ക്ലിക്ക് ചെയ്തു ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക എങ്കിൽ മാത്രമേ നിങ്ങൾക്ക് മൂവി ഈ ബോട്ട് വഴി ലഭിക്കുകയുള്ളു. അതു കഴ്ഞ്ഞു തായേ കാണുന്ന 👉"Try again"👈 എന്നുള്ളതിൽ ക്ലിക്ക് ചെയ്തു Start കൊടുത്താൽ നിങ്ങൾക്ക് മൂവി കിട്ടുന്നതാണ്...😁😁"""
+    FILTER_TEXT = """<b><u>Manual Filter</u></b>\n\n• Add me as admin in your group and start filtering:\n\n<b><u>NOTE:</u></b>\n\n1. Naruto should have admin privillage.\n2. only admins can add filters in a chat.\n3. alert buttons have a limit of 64 characters.\n\n<b><u>Commands and Usage:</u></b>\n• /addfilter - Add filter for name\n• /filters - List all filters in chat\n• /delfilters - Delete filter\n• /delallfilters - Delete entire filters (Group Owner Only!)"""
+    AUTOFILTER_TEXT = """<b><u>Auto Filter</u></b>\n\n<b><u>🤖 Bot Commands 🤖</u></b>\n  <code>(Works Only In Groups):</code>\n\n<b><u>Add CMD</u></b>\n  ☞ <code>/addchannel</code> <b>chat_id</b>\n  ☞ <code>/addchannel</code> <b>@cinimastudio</b>\n<b>- To Connect A Group With A Channel (Bot Should Be Admin With Full Previlages In Both Group And Channel)</b>\n\n<b><u>Deleted CMD</u></b>\n  ☞ <code>/delchannel</code> <b>chat_id</b>\n  ☞ <code>/delchannel</code> <b>@cinimastudio</b>\n<b>- To disconnect A Group With A Channel</i></b>"""
+    AUTOFILTER_TEXT2 = """<b><u>📃 MAIN INFORMATION 📃</u></b>\n\n  ☞ <b>/settings</b> -  <b>This Command Will Display You A Settings Pannel Instance Which Can Be Used To Tweek Bot's Settings Accordingly</b>\n\n  ☞ <b>Channel</b> - <b>Button Will Show You All The Connected Chats With The Group And Will Show Buttons Correspnding To There Order For Furthur Controls</b>\n\n  ☞ <b>Filter Types</b> - <b>Button Will Show You The 3 Filter Option Available In Bot... Pressing Each Buttons Will Either Enable or Disable Them And This Will Take Into Action As Soon As You Use Them Without The Need Of A Restart</b>      \n\n  ☞ <b>Configure</b> - <b>Button Will Helps You To Change No. of Pages/ Buttons Per Page/ Total Result Without Acutally Editing The Repo... Also It Provide Option To Enable/Disable For Showing Invite Link In Each Results</b>"""
+    DYNO_TEXT = """👤Total Users {}\n🧐Total Chtas {}\n🤯Total Manul Filters {}\n🕐Bot Update Time {}"""
+    INFORMATION_TEXT = """<b><u>Extra Modes</u></b>\n\n<b>NOTE:</b>\nthese are the extra features ofNaruto v2\n\n<b><u>Work Only Group:</u></b>:\n\n• No inline Message\n• No Forword Message\n\n<b><u>CMD Work Only Group:</u></b>\n• /report - report To admin\n\n<b><u>Commands and Usage:</u></b>\n• /id - get id about a user and group.\n• /info  - get information about a user and Group.\n• /status - Get Bot Status"""
+    CREDITS_TEXT = """<u><b>DEV</b></u>\n• Hiphop_Aadi\n\n<b><u>cinimastudio</u></b>\n• @cinimastudio"""
+    CONNECTION_TEXT = """<b><u>Connection</u></b>\n\n- Used to connect bot to PM for managing filters \n- it helps to avoid spamming in groups.\n\nNOTE:\n1. Only admins can add a connection.\n2. Send /connect for connecting me to ur PM\n\nCommands and Usage:\n• /connect  - connect a particular chat to your PM\n• /disconnect  - disconnect from a chat\n• /connections - list all your connections"""
+    DEV_TEXT = """<b><u>DEVELOPER INFO</b></u>\n\n• TG Name : <a href="t.me/Hiphop_Aadi">Hiphop Aadi</a>\n• TG Username : <a href="t.me/Hiphop_Aadi">@Hiphop_Aadi</a>\n•"""
+    GROUP_ADMIN_TEXT = """<b><u>Group Commands</u></b>\n\n<b><u>Bot Master</u></b>\n• /broadcast - Replay Any Message\n\n<b><u>Group Admin Only</u></b>\n• /ban - Reply Any User Text\n• /unban - Reply Banned User Text"""
+    SUB_TEXT = """JOIN, SHARE, MAXIMUM SUPPORT"""
+    SPELLING_TEXT = """Hey {} Check Your Spelling"""
+    STATUS_TEXT = """<b><u>Bot Status</u></b>\nTotal Users <b>{}</b>"""
+    SOURCE_TEXT = """<b><u>🥳 Naruto SOURCE CODE</b></u>\n\n📦 REPOSITORY :- https://t.me/greenstudio_bots/2\n DEVELOPER TEAM <a href="https://t.me/Cinimastudio">Team CinimaStudio</a>"""
 
-For More Details Click Help Button Below..
-@HDmoviePp
-</i>"""    
-    
-    HELP_TEXT = """
-<b><i><u> My Family!?</u></i></b>
-
-<i>
-
--> All Join Our Group And Channel
-</i>
-
-<b>MY CHANNEL AND GROUP :</b>
-
-<b>➥ ⭕️Group⭕️</b> : <b><i><a href="https://t.me/HDmoviePp">Join Group</a></i></b>
-
-<b>➥ ⭕️Channel⭕️</b> : <b><i><a href="https://t.me/HDmovieDp">Join Channel</a></i></b>
- 
-
-
-"""
-    
-    ABOUT_TEXT = """<b>➥ Name</b> : <code> Auto Filter Bot</code>
-    
-<b>➥ Creator</b> : <b><i><a href="https://t.me/Ameen_Ameen_12">ᵐʳ𝐔𝐧𝐤𝐧𝐨𝐰𝐧</a></i></b>
-
-<b>➥ Language</b> : <code>Python3</code>
-
-<b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
-
-<b>➥ Source Code</b> : <i><a href="https://github.com/Ameenamaan/Albert-new-V2">Click Me</a></i>
-"""
