@@ -1,7 +1,7 @@
 import re
 import logging
 import asyncio
-
+import imdb
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import ButtonDataInvalid, FloodWait
@@ -231,19 +231,36 @@ async def auto_filter(bot: Client, update: Message):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
-            await bot.send_message(
+            ia = imdb.IMDb()
+            my_movie=query
+            movies = ia.search_movie(my_movie)
+            #print(f"{movies[0].movieID} {movies[0]['title']}")
+            movie_url = movies[0].get_fullsizeURL()
+
+            await bot.send_photo(
+                photo=movie_url,
+                caption=f"Ameen",
+                reply_markup=reply_markup,
+                chat_id=update.chat.id,
+                reply_to_message_id=update.message_id,
+                parse_mode="html"
+            )
+
+        except Exception as e:
+          print(e)
+
+          try:
+              await bot.send_photo(
+                photo="https://telegra.ph/file/ea345890c3852a43746db.jpg",
                 chat_id = update.chat.id,
-                text=f"⚜️Check Lings At @HDmoviePp ⚜️...Found {(len_results)} Results For Your Request 😏: <code>{query}</code>",
+                caption=f"Ameen",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
             )
 
-        except ButtonDataInvalid:
-            print(result[0])
-        
-        except Exception as e:
-            print(e)
+          except ButtonDataInvalid:
+              print(result[0])
 
 
 async def gen_invite_links(db, group_id, bot, update):
